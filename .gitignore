@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+target/
+dbt_packages/
+logs/
+.vscode/
