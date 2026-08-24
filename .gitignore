@@ -6,3 +6,8 @@ target/
 dbt_packages/
 logs/
 .vscode/
+secrete/
+download/
+.direnv/
+.envrc
+secrete

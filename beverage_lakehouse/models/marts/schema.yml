@@ -1,0 +1,11 @@
+# models/marts/schema.yml
+version: 2
+
+models:
+  - name: companies
+    description: "Cleaned, business-ready beverage/alcohol manufacturing companies. Excludes non-Active statuses (Liquidation, In Administration, Proposal to Strike Off) as a deliberate data quality decision."
+    columns:
+      - name: company_number
+        description: "Companies House unique identifier."
+      - name: company_status
+        description: "Filtered to 'Active' only at this layer."
