@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_companies
+    description: "Raw pass-through of beverage/alcohol Companies House records from the raw-data lakehouse bucket."
