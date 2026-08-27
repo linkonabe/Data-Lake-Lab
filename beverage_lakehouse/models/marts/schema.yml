@@ -1,4 +1,3 @@
-# models/marts/schema.yml
 version: 2
 
 models:
@@ -7,5 +6,13 @@ models:
     columns:
       - name: company_number
         description: "Companies House unique identifier."
+        tests:
+          - unique
+          - not_null
+      - name: company_name
+        tests:
+          - not_null
       - name: company_status
-        description: "Filtered to 'Active' only at this layer."
+        tests:
+          - accepted_values:
+              values: ['Active']
