@@ -1,4 +1,5 @@
 -- models/marts/companies.sql
+{{ config(materialized='table') }}
 
 with source as (
     select * from {{ ref('stg_companies') }}
